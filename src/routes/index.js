@@ -1,19 +1,26 @@
-import HomePage from '../pages/HomePage/HomePage';
-import OderPage from '../pages/OderPage/OderPage';
-import ProductsPage from '../pages/ProductsPage/ProductsPage';
+import { DefaultLayout } from '../layouts';
+import { HomePage, NotFoundPage, OderPage, ProductsPage } from '../pages';
 
 const routes = [
     {
         path: '/',
         page: HomePage,
+        layout: DefaultLayout,
     },
     {
         path: '/order',
         page: OderPage,
+        layout: DefaultLayout,
     },
     {
-        path: '/',
+        path: '/products',
         page: ProductsPage,
+        layout: DefaultLayout,
+    },
+    {
+        path: '*',
+        page: NotFoundPage,
+        layout: null,
     },
 ];
 
