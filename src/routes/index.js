@@ -1,5 +1,11 @@
 import { DefaultLayout } from '../layouts';
-import { HomePage, NotFoundPage, OderPage, ProductsPage } from '../pages';
+import {
+    HomePage,
+    NotFoundPage,
+    OderPage,
+    ProductsPage,
+    TypePage,
+} from '../pages';
 
 const routes = [
     {
@@ -15,6 +21,11 @@ const routes = [
     {
         path: '/products',
         page: ProductsPage,
+        layout: DefaultLayout,
+    },
+    {
+        path: '/type/:type',
+        page: TypePage,
         layout: DefaultLayout,
     },
     {

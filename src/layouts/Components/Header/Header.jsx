@@ -1,4 +1,4 @@
-import { Col, Grid } from 'antd';
+import { Badge, Col, Grid } from 'antd';
 import Search from 'antd/lib/input/Search';
 import {
     UserOutlined,
@@ -50,7 +50,14 @@ const Header = () => {
                             </Col>
 
                             <CartWrapper>
-                                <ShoppingCartOutlined />
+                                <Badge size='small' count={4}>
+                                    <ShoppingCartOutlined
+                                        style={{
+                                            fontSize: '30px',
+                                            color: '#fff',
+                                        }}
+                                    />
+                                </Badge>
                                 <CartText>Giỏ hàng </CartText>
                             </CartWrapper>
                         </HeaderRowWrapper>
@@ -115,7 +122,14 @@ const Header = () => {
                         </Col>
                         <Col span={4} style={{ display: 'flex' }}>
                             <CartWrapper>
-                                <ShoppingCartOutlined />
+                                <Badge size='small' count={4}>
+                                    <ShoppingCartOutlined
+                                        style={{
+                                            fontSize: '30px',
+                                            color: '#fff',
+                                        }}
+                                    />
+                                </Badge>
                                 <CartText>Giỏ hàng </CartText>
                             </CartWrapper>
                         </Col>
@@ -166,7 +180,14 @@ const Header = () => {
                                 </div>
                             </UserWrapper>
                             <CartWrapper>
-                                <ShoppingCartOutlined />
+                                <Badge size='small' count={4}>
+                                    <ShoppingCartOutlined
+                                        style={{
+                                            fontSize: '30px',
+                                            color: '#fff',
+                                        }}
+                                    />
+                                </Badge>
                                 <CartText>Giỏ hàng </CartText>
                             </CartWrapper>
                         </Col>

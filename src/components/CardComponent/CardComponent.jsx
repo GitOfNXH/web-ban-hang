@@ -28,7 +28,7 @@ const CardComponent = () => {
             </ProductStatistic>
             <ProductPriceWrapper>
                 <span style={{ fontSize: '1.6rem' }}>1.000.000đ</span>
-                <span style={{ fontSize: '1.2rem', marginLeft: '4px' }}>
+                <span style={{ fontSize: '1.2rem', margin: '2px 0 0 4px' }}>
                     -24%
                 </span>
             </ProductPriceWrapper>
